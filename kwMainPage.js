@@ -1,6 +1,8 @@
+function profilePic(){
 img = document.getElementById('profilePic');
 userName = localStorage.getItem('user');
 img.src=`https://avatars.dicebear.com/api/bottts/${userName}.svg`;
+}
 var firebaseConfig = {
     apiKey: "AIzaSyC9yGzV0lX6VOR9UWcNypekT9mr4d7KLmU",
     authDomain: "kwitter-5c790.firebaseapp.com",
