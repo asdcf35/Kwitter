@@ -10,16 +10,18 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="Kwitter.css">
     <script src="Kwitter.js"></script>
-
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
 </head>
 
 <body>
     <div class="logout-container">
-        <img src="https://avatars.dicebear.com/api/bottts/pizza.svg">
+         <img id="profilePic">
         <button id="logout">Logout</button>
     </div>
     <span>
-        <input type="text" name="" id="">
+        <input type="text" name="" id="rName">
         <button onclick="jRoom()">Join Room</button>
     </span>
     <button onclick="addRoom()">Add Room</button>
