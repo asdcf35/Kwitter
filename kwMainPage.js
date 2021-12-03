@@ -1,6 +1,7 @@
 function profilePic(){
 img = document.getElementById('profilePic');
-userName = localStorage.getItem('user');
+str = localStorage.getItem('user');
+userName = str.replace(/[^a-zA-Z ]/g, "")
 img.src=`https://avatars.dicebear.com/api/bottts/${userName}.svg`;
 }
 var firebaseConfig = {
