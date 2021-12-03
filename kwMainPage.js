@@ -10,9 +10,8 @@ return result;
 }
 
 function profilePic(){
-img = document.getElementById('profilePic');
 mpx = makeid(11);
-img.src=`https://avatars.dicebear.com/api/bottts/${mpx}.svg`;
+document.getElementById('profilePic').src=`https://avatars.dicebear.com/api/bottts/${mpx}.svg`;
 }
 var firebaseConfig = {
     apiKey: "AIzaSyC9yGzV0lX6VOR9UWcNypekT9mr4d7KLmU",
